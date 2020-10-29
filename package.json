@@ -13,7 +13,7 @@
     "lint": "npm run lint:js && npm run lint:prettier && npm run lint:style"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint",
+    "*.{js,vue}": "eslint && prettier",
     "*.{css,vue}": "stylelint"
   },
   "husky": {
