@@ -1,5 +1,5 @@
 {
-  "name": "kids4KidsTech",
+  "name": "kids-4-kids-tech",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,9 +7,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "npm run lint:js && npm run lint:style"
+    "lint:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint:style": "stylelint --allow-empty-input **/*.{vue,css} --ignore-path .gitignore",
+    "lint:prettier": "prettier --write .",
+    "lint": "npm run lint:js && npm run lint:prettier && npm run lint:style"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
