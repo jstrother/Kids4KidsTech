@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer v-model="drawer" :mini-variant="miniVariant" :clipped="clipped" fixed app>
       <v-list>
         <v-list-item v-for="(item, i) in items" :key="i" :to="item.to" router exact>
@@ -16,7 +16,13 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="toolbarTitle" />
       <v-spacer></v-spacer>
-      <v-img src="img/Logo.PNG" alt="Kids4KidsTech Logo" max-height="5em" max-width="5em"></v-img>
+      <v-img
+        src="img/Logo.PNG"
+        alt="Kids4KidsTech Logo"
+        title="Kids4KidsTech Logo"
+        max-height="5em"
+        max-width="5em"
+      ></v-img>
     </v-app-bar>
     <v-main>
       <v-container>
