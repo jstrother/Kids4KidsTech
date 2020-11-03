@@ -61,7 +61,7 @@ export default {
         },
       ],
       miniVariant: false,
-      toolbarTitle: 'Kids4KidsTech',
+      toolbarTitle: 'Kids4KidsTech!',
     };
   },
 };
