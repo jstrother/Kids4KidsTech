@@ -2,7 +2,7 @@
   <v-container>
     <v-row>
       <v-spacer></v-spacer>
-      <v-col cols="2">
+      <v-col cols="4" md="2">
         <v-img
           src="img/Kids.PNG"
           alt="Kids Helping Kids"
@@ -53,6 +53,10 @@
 </template>
 
 <style lang="scss" scoped>
+// * {
+//   border: 1px solid red;
+// }
+
 .card {
   text-align: center;
 }

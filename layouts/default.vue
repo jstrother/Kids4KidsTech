@@ -12,7 +12,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
+    <v-app-bar :clipped-left="clipped" color="accent" elevate-on-scroll fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="toolbarTitle" />
       <v-spacer></v-spacer>
@@ -25,15 +25,16 @@
       ></v-img>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
-    <v-footer absolute app>
+    <v-footer color="accent" fixed app>
       <v-spacer></v-spacer>
       <span>
         To make a donation, please email us at:
-        <a href="mailto:Tech4kids@gmail.com?subject=Email From Kids4KidsTech Site">
+        <a
+          href="mailto:Tech4kids@gmail.com?subject=Email From Kids4KidsTech Site"
+          style="color: black"
+        >
           Tech4kids@gmail.com
         </a>
       </span>
